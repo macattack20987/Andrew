@@ -1,0 +1,21 @@
+1. What is scope?
+Variable scope is a set of rules that define which parts of your code can access a particular variable. 
+It allows a user to use the same variable name for different points in their code without breaking anything.
+Variables declared outside of a funtion have Global scope, meaning that it is available everywhere in your code.
+Variables declared inside of a function have Block scope, meaning that it is only accessable within the function's block of instructions.
+
+2. Why are global variables avoided?
+Global variables can sometimes cause "side effects" in code. The side effects could cause the code to become "indeterminate", meaning that
+some inputs could return different values at different times without any changes in the code. It's always better for your code to be
+"deteminate" meaning that an input will always return the same value.
+
+3. Explain JavaScript's strict mode
+Stirct mode in JavaScript is a way to help a programmer catch possible mistakes. When enabled, any time a variable is declared without
+the let or const keyword, an error message will be triggered. The 'use strict' command can be placed at the to of a file to enable 
+strict mode for the entire file.
+
+4. What are side effects, and what is a pure function?
+A side effect is when a function reaches outside its local scope up into a parent scope and alters a value that lives there.
+Unintened side effects can cause a code to become indeterminate, meaning that a funtion may give different results for the same values at
+different times. A pure funtion is a function that is both determinate, meaning that the funtion will always return the same value when 
+provided the same inputs, and has no side effects that could cause any  problems in the code. 
